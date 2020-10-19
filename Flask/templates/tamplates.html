@@ -1,0 +1,35 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materiały dla informatyków</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    
+    <div id="logo">
+      <p>Materiały dla informatyków</p>
+    </div>
+    <nav id="menu">
+      <ul id="Items">
+        <li class="list_item">
+          <a href="{{url_for('Home_page')}}">Home</a>
+        </li>
+        <li class="list_item">
+          <a href="{{url_for('Add_urls')}}">Dodanie linka</a>
+        </li>
+        <li class="list_item">
+          <a href="{{url_for('See_categories')}}">Materiały</a>
+        </li>
+      </ul>
+    </nav>
+    <div style="clear: both"></div>
+    {% block content %} {% endblock %}
+    <footer>Podziel się wiedzą z innymi</footer>
+    
+  </body>
+</html>

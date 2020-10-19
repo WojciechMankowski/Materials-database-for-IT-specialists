@@ -1,0 +1,24 @@
+{% extends 'tamplates.html' %}
+{% block content %} 
+<div id="list">
+<form action="{{url_for('See_categories')}}" method="post" class="see">
+  <select name="items" id="">
+     {% for category in list %}
+    <option value="{{category}}" name="items">{{category}}</option>
+    {% endfor %}
+    <input type="submit" value="Wyświatl" />
+  </select>
+</form>
+{% if categors %}
+<span id="list_url">
+  <ol>
+    {% for url in categors %}
+    <li>
+      <a href="{{url}}" target="_blank" rel="noopener noreferrer">
+      {{url}}</a></li>
+    {% endfor %}
+  </ol>
+   {% endif %}
+</span>
+</div>
+{% endblock %}

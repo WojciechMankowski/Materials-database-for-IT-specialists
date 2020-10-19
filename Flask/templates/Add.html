@@ -1,0 +1,27 @@
+{% extends 'tamplates.html' %} {% block content %}
+<div class="add">
+  <span> Dodając linka możesz podać dwie kategorie, które opisują najbardziej dodajacy link. Jest możliwość dodania jednej kategori wtedy w polu dla drugiej kategori wstaw pojedyńczą kropkę (.).</span>
+  <br/><br/>
+  <form method="post" action="{{url_for('Add_urls')}}">
+    <div id="box_form">
+    <label> Podaj kategorię: <br/> 
+      <input type="text" name="category" id="category" list="categories"/> 
+      <datalist id="categories">
+         {% for category in list %}
+    <option value="{{category}}" name="items">{{category}}</option>
+    {% endfor %}</datalist> </label>  <br/>
+    <label> Podaj kolejną kategorię: <input type="text" name="category2" id="category" list="categories2" /> 
+      <datalist id="categories2"> {% for category in list %} 
+        <option value="{{category}}" name="items">{{category}}</option>
+    {% endfor %} </datalist> </label>  <br/> 
+    <label> Podaj adres strony: <br/> <input type="url" name="url" id="url" />
+    </label> <br/>
+    <button type="submit" id="button">
+      <p>
+Dodaj
+      </p>
+    </button> 
+  </form> </div>
+</div> 
+
+{% endblock %}

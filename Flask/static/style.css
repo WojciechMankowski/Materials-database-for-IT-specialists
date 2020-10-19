@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1270px;
+	height: 500px;
+}
+
+#logo, #menu {
+	float: left;
+	width: 50%;
+	height: 80px;
+	background-color: #0099ff;
+	margin-bottom: 25px;
+}
+
+#logo {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#logo p {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#menu {
+	overflow: hidden;
+	position: relative;
+}
+
+#Items {
+	float: left;
+	list-style: none;
+	position: relative;
+	text-align: center;
+	margin-top: 25px;
+	padding-left: 120px;
+}
+
+.list_item {
+	width: 150px;
+	display: block;
+	float: left;
+	list-style: none;
+	position: relative;
+	border: solid 2px #002640;
+	border-radius: 5px;
+	background-color: #0099ff;
+} 
+
+.list_item a{
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	color: #000;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.list_item:hover {
+	background-color: #0073bf;
+}
+
+.wrapper{
+	margin-left: 25px;
+}
+.wrapper h3{
+	text-align: center;
+}
+.wrapper p{
+	margin-top: -10px;
+	text-align: justify;
+} 
+.wrapper ul{
+	padding-top: -5px;
+}
+footer{
+	width: 100%;
+	height: 25px;
+	clear: both;
+	background-color: #0099ff;
+	text-align: center;
+	clear: both;
+}
+
+.add{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%; 
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+#box_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-left: 200px;
+} 
+#box_form input{ 
+	display: flex;
+	flex-grow: 10;
+	align-content: center; 
+	width: 180px;
+	text-align: center; 
+	border: none;
+	border-bottom: black 2px solid;
+} 
+#box_form label{
+	text-align: center;
+} 
+#button{
+	display: flex;
+	flex-grow: 10;
+	align-content: center; 
+	width: 180px;
+	height: 22px;
+	text-align: center; 
+	background-color: transparent;
+} 
+#button p{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-left: 70px;
+} 
+#button:hover{
+	background-color: lightblue;
+	border: #000 solid lightblue;
+}
+.add span{
+	margin-bottom: 30px;
+}
+
+#list{
+	margin-left: 25px;
+} 
+#list_url a{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+

@@ -1,0 +1,20 @@
+{% extends 'tamplates.html' %} 
+{% block content %} 
+<div class="wrapper">
+    <span>
+        <h3> Witaj na stronie główenej</h3>
+        <p>
+            Na stronie możesz dodać nowe linki do interesujących miejsc w Internecie.
+            Również możesz zobaczyć co inni dodali do tej bazy materiałóów.
+        </p>
+        <p> Obecne kategorie używane na stronie materiały dla informatyków</p>
+    
+    <ul>
+        {% for category in list %} 
+        <li>{{category}}</li>
+         {% endfor %} 
+    </ul> 
+   
+    </span>
+</div>
+    {% endblock %}
